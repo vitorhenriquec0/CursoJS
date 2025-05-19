@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios aula 13</title>
+</head>
+<body>
+    
+
+    <script>
+
+    const nome = prompt('Digite o seu nome');
+    let nomeSemEspaço = nome.replace(/ /g, ''); // remove todos os espaços
+    // const nomeSemEspaço = nome.trim(); // remove os espaços do começo e do final
+
+    window.document.body.innerHTML += `O seu nome é ${nome}<br />`;
+    window.document.body.innerHTML += `O seu nome tem ${nomeSemEspaço.length} letras<br />`; // tira os espaços
+    window.document.body.innerHTML += `A segunda letra do seu nome é: ${nomeSemEspaço.charAt(1)}<br />`; 
+    window.document.body.innerHTML += `Qual o primeiro índice de V no seu nome? ${nomeSemEspaço.indexOf('v') + 1} <br />`;
+    window.document.body.innerHTML += `Qual o último índice da letra I no seu nome? ${nomeSemEspaço.lastIndexOf('i') + 1} <br />`;
+    window.document.body.innerHTML += `As ultimas 3 letras do seu nome são: ${nomeSemEspaço.slice(-3)} <br />`;
+    window.document.body.innerHTML += `As palavras do seu nome são: ${nome.split(' ')} <br />`;
+    window.document.body.innerHTML += `Seu nome com letras maiúsculas: ${nome.toUpperCase()} <br />`;
+    window.document.body.innerHTML += `Seu nome com letras minúsculas: ${nome.toLowerCase()} <br />`;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: rgba(32, 123, 151, 0.87);
+    --secundary-color: rgb(255, 196, 0);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    border: #000 solid 30px transparent;
+    box-shadow: 0px 0px 10px #034146;
+}
+
+.container .title {
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    width: 600px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    background: var(--secundary-color);
+    justify-content: center;
+    color: #fff;
+    border-radius: 30px;
+    border: 1.5px solid #00000025;
+}
+
+.container .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    height: 30px;
+    color: var(--secundary-color);
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 18px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 1px solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+form input:focus {
+    border: 1.5px solid var(--primary-color);
+    transition: ease-in-out 300ms;
+}
+
+form input:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    transition: ease-in-out 300ms;
+}
+
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    width: 170px;
+    margin: 20px 35%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: ease-in-out 300ms;
+}
+
+.container .tabela table {
+    width: 80%;
+    max-width: 600px; 
+    border-collapse: collapse;
+    margin: 10px 0;
+    text-align: center;  
+    border-radius: 30px;
+}
+
+
+.container .tabela {
+    padding: 20px auto;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.container .tabela .tabelaTitulo {
+    background-color: rgba(235, 200, 0, 0.3);    
+}
+
+.paragrafo-resultado, .bad {
+    background: #51ff3a;
+    color: #072e02;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #169e04;
+    font-weight: 500;
+}
+
+.bad {
+    background: rgb(255, 73, 60);
+    border-radius: 10px;
+    box-shadow: 2px 2px #9e0404;
+    color: #380202;
+    font-weight: 500;
+}

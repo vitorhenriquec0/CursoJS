@@ -13,3 +13,18 @@ function funcao2(a, b, c, d, e, f) {
 }
 funcao2(1, 2, 3);
 
+function funcao3(a, b = 2, c) {
+    console.log(a + b + c);
+}
+funcao3(2, undefined, 10)
+
+function conta(operador, acumulador, ...numeros) {
+    for (let numero of numeros) {
+        if (operador === '+') {
+            acumulador += numero;
+        }
+    }
+    console.log(acumulador)
+}
+conta('+', 0, 20, 30, 40, 50);
+

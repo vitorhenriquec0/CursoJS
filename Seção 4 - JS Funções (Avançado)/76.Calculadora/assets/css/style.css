@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: #2e8b57;
+  --primary-color-darker: #206040;
+  --accent-color: #f9c74f;
+  --btn-bg: #e9ecef;
+  --btn-hover: #b7e4c7;
+  --btn-eq: #f3722c;
+  --btn-eq-hover: #f9844a;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #5df36a 0%, #534099 100%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 32px 24px 24px 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(46, 139, 87, 0.12);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.calculadora {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f7fff7;
+  box-shadow: 0 2px 12px rgba(46, 139, 87, 0.08);
+}
+
+.display {
+  font-size: 2.1em;
+  width: 100%;
+  text-align: right;
+  padding: 18px 12px;
+  border: none;
+  background: #e9ecef;
+  color: #206040;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px rgba(46, 139, 87, 0.06);
+}
+
+.btn {
+  width: 100%;
+  height: 54px;
+  font-size: 1.15em;
+  border: none;
+  background: var(--btn-bg);
+  color: #206040;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(46, 139, 87, 0.04);
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+  color: var(--primary-color-darker);
+  box-shadow: 0 2px 8px rgba(46, 139, 87, 0.10);
+}
+
+.btn-eq {
+  background: var(--btn-eq);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(249, 199, 79, 0.10);
+}
+
+.btn-eq:hover {
+  background: var(--btn-eq-hover);
+  color: #fff;
+}
+
+.btn-clear {
+  background: var(--accent-color);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btn-clear:hover {
+  background: #ffe066;
+  color: var(--primary-color-darker);
+}
+
+.btn-del {
+  background: #b5838d;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btn-del:hover {
+  background: #ffb4a2;
+  color: var(--primary-color-darker);
+}
